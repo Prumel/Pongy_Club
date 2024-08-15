@@ -35,7 +35,6 @@ public class LicensedMember {
             inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
     private List<Role> roles = new ArrayList<>();
 
-    private String club;
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -94,9 +93,6 @@ public class LicensedMember {
         return roles;
     }
 
-    public String getClub() {
-        return club;
-    }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -153,10 +149,6 @@ public class LicensedMember {
 
     public void setRoles(List<Role> roles) {
         this.roles = roles;
-    }
-
-    public void setClub(String club) {
-        this.club = club;
     }
 
 
