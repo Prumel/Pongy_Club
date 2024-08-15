@@ -32,9 +32,6 @@ export default function RegistrationFormView({ fields, setFields, registerAdultL
         if (licenseTypeIdsLength === 0) {
             setValidationError('Vous devez sélectionner au moins une licence.');
             return false;
-        } else if (licenseTypeIdsLength === licenseTypes.length) {
-            setValidationError('Vous ne pouvez pas sélectionner toutes les licences.');
-            return false;
         }
         setValidationError('');
         return true;
