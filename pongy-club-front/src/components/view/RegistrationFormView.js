@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Form } from 'react-bootstrap';
+import { Button, Form , Alert } from 'react-bootstrap';
 
 export default function RegistrationFormView({ fields, setFields, registerAdultLicensedMember, handleDateChange, handlePostalCodeChange, cities, licenseTypes }) {
     const formType = fields.isChild ? 'child' : 'adult';
